@@ -6,27 +6,29 @@
   </head>
   <body>
 
-<div class="slide-items">
-   <div><img src="image/new_topics0705_1.png" alt=""></div>
-   <div><img src="image/new_topics0705_2.png" alt=""></div>
-   <div><img src="image/new_topics0705_3.png" alt=""></div>
-   <div><img src="image/new_topics0705_1.png" alt=""></div>
-   <div><img src="image/new_topics0705_2.png" alt=""></div>
-   <div><img src="image/new_topics0705_3.png" alt=""></div>
- </div>
+<div class="section">
+
+  <div class="sliderArea">
+    <div class="regular slider">
+      <div><img src="image/new_topics0705_1.png" alt=""></div>
+      <div><img src="image/new_topics0705_2.png" alt=""></div>
+      <div><img src="image/new_topics0705_3.png" alt=""></div>
+      <div><img src="image/new_topics0705_1.png" alt=""></div>
+      <div><img src="image/new_topics0705_2.png" alt=""></div>
+    </div>
+  </div>
       
   <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
   <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script type="text/javascript" src="slick/slick.min.js"></script>
 
   <script type="text/javascript">
-   $(document).ready(function(){
-  $(".slide-items").slick({
-  autoplay:true,
-  slidesToShow:3,
-  infinite:true,
-  slidesToScroll:1,
-});
+   $(document).on('ready', function() {
+  $(".regular").slick({
+    autoplay: true, // 自動再生を設定
+    autoplaySpeed: 4000, // 自動再生のスピード（ミリ秒単位）
+    dots: true // ドットインジケーターの表示
+  });
 });
   </script>
 
