@@ -1,7 +1,6 @@
-html, body {
-  margin: 0;
-  padding: 0;
-}
+body {
+    font-size: 14px;
+  }
 .section {
   max-width: 100%;
   margin: 0 auto;
